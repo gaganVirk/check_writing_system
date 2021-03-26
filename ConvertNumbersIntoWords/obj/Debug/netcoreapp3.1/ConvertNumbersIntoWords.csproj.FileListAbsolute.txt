@@ -1,0 +1,13 @@
+C:\Users\User\source\repos\ConvertNumbersIntoWords\ConvertNumbersIntoWords\bin\Debug\netcoreapp3.1\ConvertNumbersIntoWords.exe
+C:\Users\User\source\repos\ConvertNumbersIntoWords\ConvertNumbersIntoWords\bin\Debug\netcoreapp3.1\ConvertNumbersIntoWords.deps.json
+C:\Users\User\source\repos\ConvertNumbersIntoWords\ConvertNumbersIntoWords\bin\Debug\netcoreapp3.1\ConvertNumbersIntoWords.runtimeconfig.json
+C:\Users\User\source\repos\ConvertNumbersIntoWords\ConvertNumbersIntoWords\bin\Debug\netcoreapp3.1\ConvertNumbersIntoWords.runtimeconfig.dev.json
+C:\Users\User\source\repos\ConvertNumbersIntoWords\ConvertNumbersIntoWords\bin\Debug\netcoreapp3.1\ConvertNumbersIntoWords.dll
+C:\Users\User\source\repos\ConvertNumbersIntoWords\ConvertNumbersIntoWords\bin\Debug\netcoreapp3.1\ConvertNumbersIntoWords.pdb
+C:\Users\User\source\repos\ConvertNumbersIntoWords\ConvertNumbersIntoWords\obj\Debug\netcoreapp3.1\ConvertNumbersIntoWords.csprojAssemblyReference.cache
+C:\Users\User\source\repos\ConvertNumbersIntoWords\ConvertNumbersIntoWords\obj\Debug\netcoreapp3.1\ConvertNumbersIntoWords.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\ConvertNumbersIntoWords\ConvertNumbersIntoWords\obj\Debug\netcoreapp3.1\ConvertNumbersIntoWords.AssemblyInfo.cs
+C:\Users\User\source\repos\ConvertNumbersIntoWords\ConvertNumbersIntoWords\obj\Debug\netcoreapp3.1\ConvertNumbersIntoWords.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\ConvertNumbersIntoWords\ConvertNumbersIntoWords\obj\Debug\netcoreapp3.1\ConvertNumbersIntoWords.dll
+C:\Users\User\source\repos\ConvertNumbersIntoWords\ConvertNumbersIntoWords\obj\Debug\netcoreapp3.1\ConvertNumbersIntoWords.pdb
+C:\Users\User\source\repos\ConvertNumbersIntoWords\ConvertNumbersIntoWords\obj\Debug\netcoreapp3.1\ConvertNumbersIntoWords.genruntimeconfig.cache
