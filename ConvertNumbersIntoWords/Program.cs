@@ -4,6 +4,27 @@ namespace ConvertNumbersIntoWords
 {
     class Program
     {
+        public static string ConvertAmount(double amount)
+        {
+            try
+            {
+                int amount_int = (int)amount;
+                int amount_dec = (int)Math.Round((amount - (double)(amount_int)) * 100);
+                if (amount_dec == 0)
+                {
+                    return NumberToWords(amount_int) + " Only.";
+                }
+                else
+                {
+                    return NumberToWords(amount_int) + " Point " + NumberToWords(amount_dec) + " Only.";
+                }
+            }
+            catch (Exception e)
+            {
+                // TODO: handle exception  
+            }
+            return "";
+        }
         public static string NumberToWords(int number)
         {
             if (number == 0)
@@ -59,7 +80,7 @@ namespace ConvertNumbersIntoWords
             {
                 Console.WriteLine("Enter a Number to convert to words");
                 string number = Console.ReadLine();
-                number = NumberToWords(int.Parse(number));
+                number = ConvertAmount(double.Parse(number));
 
                 Console.WriteLine("Number in words is \n{0}", number);
                 Console.ReadKey();
