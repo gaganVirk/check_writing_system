@@ -12,11 +12,11 @@ namespace ConvertNumbersIntoWords
                 int amount_dec = (int)Math.Round((amount - (double)(amount_int)) * 100);
                 if (amount_dec == 0)
                 {
-                    return NumberToWords(amount_int) + " Only.";
+                    return NumberToWords(amount_int) + " dollars.";
                 }
                 else
                 {
-                    return NumberToWords(amount_int) + " Point " + NumberToWords(amount_dec) + " Only.";
+                    return NumberToWords(amount_int).ToUpper() + " dollars and " + NumberToWords(amount_dec) + " cents.";
                 }
             }
             catch (Exception e)
@@ -31,19 +31,20 @@ namespace ConvertNumbersIntoWords
                 return "zero";
 
             if (number < 0)
-                return "minus " + NumberToWords(Math.Abs(number));
+                return "Number has to be non-negative";
+                
 
             string words = "";
 
             if ((number / 1000000) > 0)
             {
-                words += NumberToWords(number / 1000000) + " million ";
+                words += NumberToWords(number / 1000000) + " million, ";
                 number %= 1000000;
             }
 
             if ((number / 1000) > 0)
             {
-                words += NumberToWords(number / 1000) + " thousand ";
+                words += NumberToWords(number / 1000) + " thousand, ";
                 number %= 1000;
             }
 
@@ -67,7 +68,7 @@ namespace ConvertNumbersIntoWords
                 {
                     words += tensMap[number / 10];
                     if ((number % 10) > 0)
-                        words += "-" + unitsMap[number % 10];
+                        words += " " + unitsMap[number % 10];
                 }
             }
 
@@ -78,7 +79,7 @@ namespace ConvertNumbersIntoWords
         {
             try
             {
-                Console.WriteLine("Enter a Number to convert to words");
+                Console.WriteLine("Enter a Number to convert into words");
                 string number = Console.ReadLine();
                 number = ConvertAmount(double.Parse(number));
 
