@@ -4,13 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using ChequeWriting_System.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ChequeWriting_System.Controllers
 {
     public class HomeController : Controller
     {
         [HttpGet]
-        public ActionResult Index()
+        public ViewResult Index()
         {
             return View();
         }
@@ -24,9 +25,9 @@ namespace ChequeWriting_System.Controllers
         }*/
 
         [HttpPost]
-        public IActionResult Index(Models.ChequeWriting chequeWriting)
+        public ViewResult Index(ChequeWriting chequeWriting)
         {
-            return View($"Hello {chequeWriting.Number}");
+            return View("Hello");
         }
 
     }

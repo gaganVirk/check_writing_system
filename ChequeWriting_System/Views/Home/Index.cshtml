@@ -5,7 +5,20 @@
 }
 
 
-<form asp-action="Index" asp-controller="Home">
-    <input asp-for="Number" placeholder="Please write the cheque here." />
-    <input type="submit" />
-</form>
+@*<form asp-action="Put" asp-controller="Home">
+        <input asp-for="Number" placeholder="Please write the cheque here." />
+        <input type="submit" />
+    </form>*@
+
+
+<p>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <input type="number" name="Number" id="Number" multiple />
+        <input type="submit" name="submit" value="Upload" />
+    }
+</p>
+<textarea></textarea>
+
+
+
