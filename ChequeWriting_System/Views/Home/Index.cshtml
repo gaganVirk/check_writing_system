@@ -1,0 +1,11 @@
+﻿@model ChequeWriting_System.Models.ChequeWriting
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<form asp-action="Index" asp-controller="Home">
+    <input asp-for="Number" placeholder="Please write the cheque here." />
+    <input type="submit" />
+</form>
