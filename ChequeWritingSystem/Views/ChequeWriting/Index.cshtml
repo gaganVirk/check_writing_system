@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<div class="jumbotron">
+    <div class="form-group">
+        <h2 class="lead">Please enter a dollar amount in your number to convert into words</h2>
+        @using (Html.BeginForm("Index", "ChequeWriting", FormMethod.Post))
+        {
+            <div class="form-group">
+            <input name="Number" id="Number" class="form-control" maxlength="9"/>
+            </div>
+            <button type="submit" class="btn btn-primary">Convert</button>
+        }
+        <h3 class="display-4">
+             @ViewBag.Currency<br />
+        </h3>
+    </div>
+</div>
